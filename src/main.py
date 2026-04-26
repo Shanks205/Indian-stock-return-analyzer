@@ -7,6 +7,7 @@ risk-return metrics used in finance.
 from data_loader import download_price_data
 from calculations import calculate_performance_metrics
 from charts import plot_price_chart, plot_cumulative_return_chart, plot_drawdown_chart
+from excel_export import export_metrics_to_excel
 
 
 def main() -> None:
@@ -27,6 +28,7 @@ def main() -> None:
     plot_price_chart(prices, ticker)
     plot_cumulative_return_chart(cumulative_returns, ticker)
     plot_drawdown_chart(drawdowns, ticker)
+    export_metrics_to_excel(metrics, ticker)
 
 
 if __name__ == "__main__":
