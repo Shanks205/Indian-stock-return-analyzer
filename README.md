@@ -26,6 +26,7 @@ RELIANCE.NS
 - Generate price chart
 - Generate cumulative return chart
 - Generate drawdown chart
+- Export performance summary to Excel
 - Provide methodology and interview notes
 
 ## Tools and libraries
@@ -52,13 +53,15 @@ Indian-stock-return-analyzer/
 │   ├── main.py
 │   ├── data_loader.py
 │   ├── calculations.py
-│   └── charts.py
+│   ├── charts.py
+│   └── excel_export.py
 │
 ├── docs/
 │   ├── methodology.md
 │   └── interview_notes.md
 │
 └── outputs/
+    ├── .gitkeep
     └── charts/
 ```
 
@@ -100,6 +103,17 @@ Sharpe Ratio = Annualized Return / Annualized Volatility
 
 Maximum drawdown measures the worst fall from a previous peak. It helps understand downside risk.
 
+## Outputs generated
+
+When the project is run locally, it generates:
+
+- Price chart
+- Cumulative return chart
+- Drawdown chart
+- Excel performance summary
+
+The Excel file is useful because finance analysts often review and share results in spreadsheet format.
+
 ## How to run this project
 
 First install the required Python libraries:
@@ -120,7 +134,6 @@ This project is for education and portfolio demonstration only. It does not prov
 
 ## Future improvements
 
-- Add Excel export
 - Add multiple-stock comparison
 - Add benchmark comparison with NIFTY 50
 - Add beta and Jensen's alpha
@@ -130,4 +143,4 @@ This project is for education and portfolio demonstration only. It does not prov
 
 ## Resume bullet
 
-Built a Python-based Indian equity analytics tool to calculate annualized return, volatility, Sharpe ratio, cumulative return, and maximum drawdown using historical stock price data.
+Built a Python-based Indian equity analytics tool to calculate annualized return, volatility, Sharpe ratio, cumulative return, and maximum drawdown using historical stock price data, with chart generation and Excel reporting.
