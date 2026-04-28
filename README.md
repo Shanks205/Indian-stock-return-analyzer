@@ -1,43 +1,104 @@
-# Indian Stock Return Analyzer
+# Indian Equity Valuation Lab
 
-A beginner-friendly Python project to analyze Indian stock returns, risk, and performance metrics.
+A practical Python and Excel-based equity research project for Indian listed companies, combining stock-return analysis, fundamental screening, Piotroski F-Score, discounted cash flow valuation, WACC stress testing, margin-of-safety rules, and barbell portfolio construction.
 
-This project is built for finance learning, GitHub portfolio development, and resume demonstration. It connects basic equity analysis concepts with practical Python implementation.
+This repository started as a beginner-friendly Indian stock return analyzer. It is now being expanded into a full equity valuation lab suitable for finance learning, GitHub portfolio development, interview discussion, and future research-paper development.
+
+> This project is for education, research, and portfolio demonstration only. It is not investment advice or a buy/sell recommendation.
+
+---
 
 ## Project objective
 
-The objective is to download historical stock price data for an Indian listed company and calculate important risk-return metrics used in finance.
+The objective is to build a repeatable analyst-style framework for evaluating Indian equities.
 
-The current version analyzes one stock at a time. The default example is:
+The project aims to answer:
+
+> Can a disciplined framework combining accounting quality, intrinsic valuation, margin of safety, and portfolio-fit rules improve Indian equity selection compared with simple return analysis?
+
+The final project will move from raw market data to a structured investment research output:
 
 ```text
-RELIANCE.NS
+Stock universe
+→ Fundamental screening
+→ Piotroski F-Score
+→ Historical financial analysis
+→ DCF valuation
+→ Scenario and sensitivity analysis
+→ Margin-of-safety decision
+→ Portfolio-fit score
+→ Analyst-style research summary
 ```
 
-## Features
+---
 
-- Download stock price data using `yfinance`
-- Calculate daily returns
-- Calculate cumulative returns
-- Calculate annualized return
-- Calculate annualized volatility
-- Calculate Sharpe ratio
-- Calculate maximum drawdown
-- Generate price chart
-- Generate cumulative return chart
-- Generate drawdown chart
-- Export performance summary to Excel
-- Provide methodology and interview notes
+## Why this project matters
 
-## Tools and libraries
+This project is designed to demonstrate skills relevant to:
 
-- Python
-- pandas
-- numpy
-- matplotlib
-- yfinance
-- openpyxl
-- GitHub
+- Financial analysis
+- Equity research
+- Investment banking
+- Portfolio analytics
+- Fundamental valuation
+- Python-based financial modeling
+- Excel-based valuation modeling
+- Research documentation
+
+It connects practical finance concepts with Python implementation and analyst-style reporting.
+
+---
+
+## Current status
+
+### Completed foundation
+
+- Historical stock price download using `yfinance`
+- Daily returns
+- Cumulative returns
+- Annualized return
+- Annualized volatility
+- Sharpe ratio
+- Maximum drawdown
+- Charts
+- Excel export
+- Beginner-friendly methodology notes
+
+### New valuation-lab extension
+
+The project is now being expanded with:
+
+- Piotroski F-Score module
+- FCFF DCF model skeleton
+- Equity valuation methodology
+- Research pipeline documentation
+- Investment banking-style project blueprint
+
+---
+
+## Initial company universe
+
+The first research universe follows a barbell framework: core value/quality companies plus selective growth companies.
+
+### Core value / quality candidates
+
+- Hero MotoCorp
+- Natco Pharma
+- NALCO
+- Hindustan Zinc
+- CPCL
+- Sharda Cropchem
+
+### Growth / satellite candidates
+
+- Fiem Industries
+- Time Technoplast
+- Force Motors
+- Triveni Turbine
+
+Hero MotoCorp and Fiem Industries have already been analysed in first-pass Excel DCF models outside this repository. The next step is to standardize those models inside the repository workflow.
+
+---
 
 ## Project structure
 
@@ -54,93 +115,193 @@ Indian-stock-return-analyzer/
 │   ├── data_loader.py
 │   ├── calculations.py
 │   ├── charts.py
-│   └── excel_export.py
+│   ├── excel_export.py
+│   ├── piotroski_score.py
+│   └── dcf_model.py
 │
 ├── docs/
 │   ├── methodology.md
-│   └── interview_notes.md
+│   ├── interview_notes.md
+│   ├── equity_valuation_lab_blueprint.md
+│   ├── valuation_methodology.md
+│   └── research_pipeline.md
 │
-└── outputs/
-    ├── .gitkeep
-    └── charts/
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── models/
+│   └── company_dcf_models/
+│
+├── outputs/
+│   ├── .gitkeep
+│   ├── charts/
+│   └── valuation_summary/
+│
+└── paper/
+    └── ssrn_working_paper_draft/
 ```
 
-## Finance concepts covered
+Some folders may be added gradually as the project develops.
 
-### Daily return
+---
 
-Daily return measures the percentage change in stock price from one trading day to the next.
+## Core modules
 
-```text
-Daily Return = Today's Price / Yesterday's Price - 1
-```
+### 1. Stock return analyzer
 
-### Annualized return
+The original project calculates:
 
-Annualized return estimates the yearly return based on average daily return.
-
-```text
-Annualized Return = Average Daily Return × 252
-```
-
-### Annualized volatility
-
-Annualized volatility measures yearly risk based on daily return fluctuation.
-
-```text
-Annualized Volatility = Standard Deviation of Daily Returns × √252
-```
-
-### Sharpe ratio
-
-Sharpe ratio measures return earned per unit of risk.
-
-```text
-Sharpe Ratio = Annualized Return / Annualized Volatility
-```
-
-### Maximum drawdown
-
-Maximum drawdown measures the worst fall from a previous peak. It helps understand downside risk.
-
-## Outputs generated
-
-When the project is run locally, it generates:
-
-- Price chart
-- Cumulative return chart
-- Drawdown chart
+- daily returns
+- cumulative returns
+- annualized return
+- annualized volatility
+- Sharpe ratio
+- maximum drawdown
+- price chart
+- cumulative return chart
+- drawdown chart
 - Excel performance summary
 
-The Excel file is useful because finance analysts often review and share results in spreadsheet format.
+### 2. Piotroski F-Score module
 
-## How to run this project
+`src/piotroski_score.py` calculates the 9-point Piotroski F-Score using profitability, leverage/liquidity, and operating-efficiency signals.
 
-First install the required Python libraries:
+The score is based on:
+
+1. Positive net income
+2. Positive operating cash flow
+3. Improving ROA
+4. Operating cash flow greater than net income
+5. Lower leverage
+6. Improving current ratio
+7. No equity dilution
+8. Improving gross margin
+9. Improving asset turnover
+
+### 3. DCF valuation module
+
+`src/dcf_model.py` provides a reusable free cash flow to firm valuation skeleton.
+
+The model estimates:
+
+- projected FCFF
+- present value of forecast cash flows
+- terminal value
+- enterprise value
+- equity value
+- intrinsic value per share
+
+---
+
+## Valuation methodology
+
+The project uses FCFF DCF valuation for non-financial companies.
+
+### FCFF formula
+
+```text
+FCFF = EBIT × (1 - Tax Rate) + Depreciation and Amortization - Capital Expenditure - Change in Net Working Capital
+```
+
+### WACC framework
+
+```text
+WACC = Cost of Equity × Equity Weight + After-tax Cost of Debt × Debt Weight
+```
+
+Cost of equity is estimated using:
+
+```text
+Cost of Equity = Risk-free Rate + Beta × Equity Risk Premium + Company-specific Risk Premium
+```
+
+### Terminal value
+
+```text
+Terminal Value = Final Year FCFF × (1 + Terminal Growth) / (WACC - Terminal Growth)
+```
+
+---
+
+## Analyst checks added to every valuation
+
+Each company valuation should include:
+
+- historical financial analysis
+- source log
+- assumption log
+- WACC build-up
+- base, bear, and bull scenarios
+- WACC vs terminal-growth sensitivity
+- margin-of-safety calculation
+- risk-regime check
+- AI attention-bias check
+- governance check
+- cash-conversion check
+- portfolio-fit conclusion
+
+---
+
+## Future research-paper direction
+
+This project may later be converted into a working paper for SSRN.
+
+Possible paper title:
+
+> From Screening to Intrinsic Value: A Practical Fundamental Research Framework for Indian Stocks
+
+Possible research themes:
+
+- DCF-implied undervaluation in Indian equities
+- Piotroski F-Score as a quality filter before valuation
+- Margin of safety and portfolio construction
+- Barbell strategy combining value and growth stocks
+- Risk-regime and WACC stress testing in Indian equity valuation
+
+---
+
+## How to run the current project
+
+Install the required Python libraries:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Then run the main script:
+Run the original return analyzer:
 
 ```bash
 python src/main.py
 ```
 
-## Important note
+Run the Piotroski module demo:
 
-This project is for education and portfolio demonstration only. It does not provide investment advice or buy/sell recommendations.
+```bash
+python src/piotroski_score.py
+```
 
-## Future improvements
+Run the DCF module demo:
 
-- Add multiple-stock comparison
-- Add benchmark comparison with NIFTY 50
-- Add beta and Jensen's alpha
-- Add Streamlit dashboard
-- Add portfolio-level analysis
-- Add technical indicators such as RSI and moving averages
+```bash
+python src/dcf_model.py
+```
 
-## Resume bullet
+---
 
-Built a Python-based Indian equity analytics tool to calculate annualized return, volatility, Sharpe ratio, cumulative return, and maximum drawdown using historical stock price data, with chart generation and Excel reporting.
+## Tools and libraries
+
+- Python
+- pandas
+- numpy
+- matplotlib
+- yfinance
+- openpyxl
+- Excel
+- GitHub
+
+---
+
+## Disclaimer
+
+This repository is for education, research, and portfolio demonstration only. It does not provide investment advice, financial advice, or buy/sell recommendations. All valuation outputs depend heavily on assumptions and must be independently verified before use.
