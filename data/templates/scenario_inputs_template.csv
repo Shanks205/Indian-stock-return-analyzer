@@ -1,0 +1,11 @@
+ticker,company_name,bucket,current_price,shares_outstanding_cr,net_debt_cr,mos_required,bear_current_fcff_cr,bear_growth_y1,bear_growth_y2,bear_growth_y3,bear_growth_y4,bear_growth_y5,bear_wacc,bear_terminal_growth,base_current_fcff_cr,base_growth_y1,base_growth_y2,base_growth_y3,base_growth_y4,base_growth_y5,base_wacc,base_terminal_growth,bull_current_fcff_cr,bull_growth_y1,bull_growth_y2,bull_growth_y3,bull_growth_y4,bull_growth_y5,bull_wacc,bull_terminal_growth,source_notes,analyst_notes
+HEROMOTOCO.NS,Hero MotoCorp,Core Value / Quality,,,,0.25,,,,,,,,,,,,,,,,,,,,,,,,,Reconcile from Hero annual report and DCF model,First-pass DCF exists; needs standardized scenario inputs
+FIEMIND.NS,Fiem Industries,Growth Satellite,,,,0.25,,,,,,,,,,,,,,,,,,,,,,,,,Reconcile from Fiem annual report and DCF model,First-pass DCF exists; needs standardized scenario inputs
+NATCOPHARM.NS,Natco Pharma,Core Value / Quality,,,,0.25,,,,,,,,,,,,,,,,,,,,,,,,,Pending annual report and current market data,Next full company analysis candidate
+NATIONALUM.NS,NALCO,Core Value / Cyclical,,,,0.35,,,,,,,,,,,,,,,,,,,,,,,,,Use normalized commodity-cycle assumptions,Needs cyclical normalized valuation
+HINDZINC.NS,Hindustan Zinc,Core Quality / Commodity,,,,0.35,,,,,,,,,,,,,,,,,,,,,,,,,Use normalized zinc lead silver assumptions,Needs commodity normalization
+CHENNPETRO.NS,CPCL,Deep Value / Cyclical,,,,0.40,,,,,,,,,,,,,,,,,,,,,,,,,Use normalized refining margin assumptions,High uncertainty cyclical case
+SHARDACROP.NS,Sharda Cropchem,Core Value / Midcap,,,,0.30,,,,,,,,,,,,,,,,,,,,,,,,,Check working capital and cash conversion,Needs cash conversion deep dive
+TIMETECHNO.NS,Time Technoplast,Growth Satellite,,,,0.30,,,,,,,,,,,,,,,,,,,,,,,,,Check growth visibility and reinvestment needs,Needs growth satellite valuation
+FORCEMOT.NS,Force Motors,Growth / Cyclical,,,,0.35,,,,,,,,,,,,,,,,,,,,,,,,,Normalize recent earnings and auto-cycle assumptions,Needs cyclical auto valuation
+TRITURBINE.NS,Triveni Turbine,Quality Growth,,,,0.25,,,,,,,,,,,,,,,,,,,,,,,,,Check valuation sensitivity,Quality growth but likely valuation sensitive
