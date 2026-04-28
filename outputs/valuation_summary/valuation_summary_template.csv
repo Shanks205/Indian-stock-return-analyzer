@@ -1,0 +1,11 @@
+ticker,company_name,bucket,current_price,intrinsic_value_bear,intrinsic_value_base,intrinsic_value_bull,base_upside_downside,mos_required,buy_zone_price,piotroski_score,quality_score,growth_score,valuation_score,risk_score,portfolio_fit_score,final_view,next_action
+HEROMOTOCO.NS,Hero MotoCorp,Core Value / Quality,,,,,,,,,,,,,,Watchlist,Reconcile DCF assumptions with annual report and latest quarterly data
+FIEMIND.NS,Fiem Industries,Growth Satellite,,,,,,,,,,,,,,Hold / Watchlist,Reconcile DCF assumptions with annual report and latest quarterly data
+NATCOPHARM.NS,Natco Pharma,Core Value / Quality,,,,,,,,,,,,,,Pending,Collect annual reports and run first-pass DCF
+NATIONALUM.NS,NALCO,Core Value / Cyclical,,,,,,,,,,,,,,Pending,Use normalized commodity-cycle assumptions
+HINDZINC.NS,Hindustan Zinc,Core Quality / Commodity,,,,,,,,,,,,,,Pending,Use normalized zinc/lead/silver assumptions
+CHENNPETRO.NS,CPCL,Deep Value / Cyclical,,,,,,,,,,,,,,Pending,Use normalized refining margin assumptions
+SHARDACROP.NS,Sharda Cropchem,Core Value / Midcap,,,,,,,,,,,,,,Pending,Check working capital and cash conversion
+TIMETECHNO.NS,Time Technoplast,Growth Satellite,,,,,,,,,,,,,,Pending,Check growth visibility and reinvestment needs
+FORCEMOT.NS,Force Motors,Growth / Cyclical,,,,,,,,,,,,,,Pending,Normalize recent earnings and auto-cycle assumptions
+TRITURBINE.NS,Triveni Turbine,Quality Growth,,,,,,,,,,,,,,Pending,Check whether quality is already priced in
