@@ -1,0 +1,11 @@
+ticker,company_name,valuation_date,current_price,shares_outstanding_cr,market_cap_cr,net_debt_cr,current_fcff_cr,revenue_growth_y1,revenue_growth_y2,revenue_growth_y3,revenue_growth_y4,revenue_growth_y5,ebit_margin_base,tax_rate,wacc_base,terminal_growth_base,margin_of_safety_required,source_price,source_financials,source_wacc_notes,analyst_notes
+HEROMOTOCO.NS,Hero MotoCorp,,,,,,,,,,,,,,,,0.25,,,,Use first-pass Hero DCF assumptions after reconciliation
+FIEMIND.NS,Fiem Industries,,,,,,,,,,,,,,,,0.25,,,,Use first-pass Fiem DCF assumptions after reconciliation
+NATCOPHARM.NS,Natco Pharma,,,,,,,,,,,,,,,,0.25,,,,Pending data collection
+NATIONALUM.NS,NALCO,,,,,,,,,,,,,,,,0.35,,,,Cyclical company; use higher MOS and normalized commodity assumptions
+HINDZINC.NS,Hindustan Zinc,,,,,,,,,,,,,,,,0.35,,,,Cyclical commodity company; normalize zinc/lead/silver cycle
+CHENNPETRO.NS,CPCL,,,,,,,,,,,,,,,,0.40,,,,Deep cyclical/refining company; use conservative normalized GRM assumptions
+SHARDACROP.NS,Sharda Cropchem,,,,,,,,,,,,,,,,0.30,,,,Check working capital and cash conversion
+TIMETECHNO.NS,Time Technoplast,,,,,,,,,,,,,,,,0.30,,,,Growth satellite; verify reinvestment needs
+FORCEMOT.NS,Force Motors,,,,,,,,,,,,,,,,0.35,,,,Auto cyclical; avoid extrapolating peak earnings
+TRITURBINE.NS,Triveni Turbine,,,,,,,,,,,,,,,,0.25,,,,Quality growth; valuation likely sensitive to terminal assumptions
