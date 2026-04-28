@@ -1,0 +1,11 @@
+ticker,company_name,current_research_status,valuation_status,final_conclusion_status,next_deep_research_step
+HEROMOTOCO.NS,Hero MotoCorp,First-pass DCF completed,Needs deep annual-report reconciliation and industry/peer review,No final investment-style conclusion yet,Build Hero deep-dive note using annual report quarterly results EV transition industry data peer comparison and WACC reconciliation
+FIEMIND.NS,Fiem Industries,First-pass DCF completed,Needs deep annual-report reconciliation and auto-ancillary/customer/EV analysis,No final investment-style conclusion yet,Build Fiem deep-dive note using annual report investor presentation OEM exposure EV growth industry data peer comparison and WACC reconciliation
+NATCOPHARM.NS,Natco Pharma,Deep research in progress,Needs full annual-report extraction pipeline review and peer comparison,No final investment-style conclusion yet,Extract FY21-FY25 financials normalize FCFF review pipeline semaglutide complex generics and agrochemical segment
+NATIONALUM.NS,NALCO,Screened,Needs cyclical commodity valuation,No final investment-style conclusion yet,Build normalized aluminium cycle assumptions and commodity sensitivity model
+HINDZINC.NS,Hindustan Zinc,Screened,Needs commodity and dividend valuation,No final investment-style conclusion yet,Build zinc lead silver cycle review and dividend/FCFF valuation
+CHENNPETRO.NS,CPCL,Screened,Needs refining-cycle valuation,No final investment-style conclusion yet,Build normalized GRM crude spread and refining-cycle framework
+SHARDACROP.NS,Sharda Cropchem,Screened,Needs working-capital and agrochemical cycle review,No final investment-style conclusion yet,Review receivables inventory cash conversion export demand and agrochemical cycle
+TIMETECHNO.NS,Time Technoplast,Screened,Needs growth and reinvestment review,No final investment-style conclusion yet,Review segment growth composite cylinders industrial packaging capex and cash conversion
+FORCEMOT.NS,Force Motors,Screened,Needs cyclical auto normalized earnings review,No final investment-style conclusion yet,Normalize earnings review segment drivers and auto-cycle risk
+TRITURBINE.NS,Triveni Turbine,Screened,Needs quality-growth valuation sensitivity review,No final investment-style conclusion yet,Review order book exports margins capex cycle and valuation sensitivity
