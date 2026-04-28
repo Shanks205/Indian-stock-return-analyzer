@@ -1,0 +1,11 @@
+ticker,company_name,bucket,sector,valuation_method,priority,status,notes
+HEROMOTOCO.NS,Hero MotoCorp,Core Value / Quality,Automobiles,FCFF DCF,1,First-pass completed,Large-cap two-wheeler leader; useful clean DCF case
+FIEMIND.NS,Fiem Industries,Growth Satellite,Auto Ancillary,FCFF DCF,2,First-pass completed,Auto lighting and EV/component growth exposure
+NATCOPHARM.NS,Natco Pharma,Core Value / Quality,Pharmaceuticals,FCFF DCF,3,Pending,Low-debt pharma value candidate; check one-off earnings risk
+NATIONALUM.NS,NALCO,Core Value / Cyclical,Metals and Mining,Cyclical FCFF DCF,4,Pending,Commodity-linked; use normalized aluminium/alumina assumptions
+HINDZINC.NS,Hindustan Zinc,Core Quality / Commodity,Metals and Mining,Cyclical FCFF DCF,5,Pending,High profitability; zinc/lead/silver cycle needs normalization
+CHENNPETRO.NS,CPCL,Deep Value / Cyclical,Oil Refining,Cyclical FCFF DCF,6,Pending,Refining margins are cyclical; DCF requires normalized GRM
+SHARDACROP.NS,Sharda Cropchem,Core Value / Midcap,Agrochemicals,FCFF DCF,7,Pending,Check working capital cycle and export agrochemical demand
+TIMETECHNO.NS,Time Technoplast,Growth Satellite,Industrial Packaging,FCFF DCF,8,Pending,Industrial packaging and composite cylinder growth story
+FORCEMOT.NS,Force Motors,Growth / Cyclical,Automobiles,FCFF DCF,9,Pending,Cyclical auto exposure; normalize recent growth
+TRITURBINE.NS,Triveni Turbine,Quality Growth,Capital Goods,FCFF DCF,10,Pending,High-quality growth; valuation discipline required
