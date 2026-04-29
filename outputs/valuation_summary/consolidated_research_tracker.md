@@ -36,7 +36,7 @@ This tracker records the status of each company valuation inside the repository.
 | Fiem Industries | Growth / satellite | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, customer mix, beta regression, and peer table |
 | Time Technoplast | Growth / satellite | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, value-added mix, working-capital days, beta regression, and peer table |
 | Force Motors | Growth / satellite | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, exceptional-item normalization, beta regression, and peer table |
-| Triveni Turbine | Growth / satellite | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
+| Triveni Turbine | Growth / satellite | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, order book, export/aftermarket mix, beta regression, and peer table |
 
 ---
 
@@ -196,47 +196,52 @@ Completed files:
 - `models/company_dcf_models/force_motors/research_completion_audit.md`
 - `outputs/valuation_summary/force_motors_numerical_refresh_v1.md`
 
+### Triveni Turbine
+
+Current classification:
+
+```text
+Public-Source Complete v1 — audited-data refresh pending
+```
+
+Completed files:
+
+- `models/company_dcf_models/triveni_turbine/triveni_turbine_research_note.md`
+- `models/company_dcf_models/triveni_turbine/assumptions_log.md`
+- `models/company_dcf_models/triveni_turbine/source_log.md`
+- `models/company_dcf_models/triveni_turbine/peer_framework_v1.md`
+- `models/company_dcf_models/triveni_turbine/research_completion_audit.md`
+- `outputs/valuation_summary/triveni_turbine_numerical_refresh_v1.md`
+
 Research is now complete for public-source v1. Remaining items are data-refresh dependencies rather than missing-research sections.
 
 Later refresh items:
 
 - audited FY26 annual report reconciliation
 - actual FY26 revenue, EBIT, tax, capex, and working-capital refresh
-- exceptional item normalization
 - share count verification
 - cash and debt reconciliation
-- beta regression vs Nifty Auto / Nifty 50
+- beta regression vs Nifty Capital Goods / Nifty 50
 - date-consistent peer numerical table validation
 - latest market price refresh
-- product and segment mix refresh
+- order book, order inflow, export mix and aftermarket mix refresh
 
 ---
 
-## Next recommended company
-
-The final remaining company in the current tracker is:
+## Current tracker status
 
 ```text
-Triveni Turbine
+All companies in the current tracker are now Public-Source Complete v1.
 ```
 
-The next company should be analysed using the same institutional sequence:
+Future work should focus on:
 
-1. Business overview
-2. Industry context
-3. Investment thesis
-4. Growth drivers
-5. Financial performance review
-6. DCF assumptions
-7. WACC framework
-8. Peer comparison
-9. Scenario analysis
-10. Sensitivity analysis
-11. Risk matrix
-12. Data-quality status
-13. Final Research v1 conclusion
-14. Numerical DCF refresh
-15. Research completion audit
+1. audited FY26 refresh when annual reports are available
+2. date-consistent market-price and peer-table refresh
+3. beta regression and WACC refinement
+4. Excel workbook generation for each completed company
+5. consolidated valuation dashboard
+6. final GitHub project polish and README update
 
 ---
 
