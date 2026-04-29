@@ -33,7 +33,7 @@ This tracker records the status of each company valuation inside the repository.
 | Hindustan Zinc | Core value / quality | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, zinc/silver deck, beta regression, and peer table |
 | CPCL | Core value / quality | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, GRM deck, beta regression, and peer table |
 | Sharda Cropchem | Core value / quality | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, working-capital days, beta regression, and peer table |
-| Fiem Industries | Growth / satellite | Not started in repo | Pending | Pending | Pending | Pending | Pending | Standardize prior model inside repo |
+| Fiem Industries | Growth / satellite | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, customer mix, beta regression, and peer table |
 | Time Technoplast | Growth / satellite | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
 | Force Motors | Growth / satellite | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
 | Triveni Turbine | Growth / satellite | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
@@ -145,6 +145,23 @@ Completed files:
 - `models/company_dcf_models/sharda_cropchem/research_completion_audit.md`
 - `outputs/valuation_summary/sharda_cropchem_numerical_refresh_v1.md`
 
+### Fiem Industries
+
+Current classification:
+
+```text
+Public-Source Complete v1 — audited-data refresh pending
+```
+
+Completed files:
+
+- `models/company_dcf_models/fiem_industries/fiem_industries_research_note.md`
+- `models/company_dcf_models/fiem_industries/assumptions_log.md`
+- `models/company_dcf_models/fiem_industries/source_log.md`
+- `models/company_dcf_models/fiem_industries/peer_framework_v1.md`
+- `models/company_dcf_models/fiem_industries/research_completion_audit.md`
+- `outputs/valuation_summary/fiem_industries_numerical_refresh_v1.md`
+
 Research is now complete for public-source v1. Remaining items are data-refresh dependencies rather than missing-research sections.
 
 Later refresh items:
@@ -153,10 +170,10 @@ Later refresh items:
 - actual FY26 revenue, EBIT, tax, capex, and working-capital refresh
 - share count verification
 - cash and debt reconciliation
-- beta regression vs chemical/agrochemical peer index
+- beta regression vs Nifty Auto / Nifty 50
 - date-consistent peer numerical table validation
 - latest market price refresh
-- working-capital days refresh
+- customer mix and two-wheeler exposure refresh
 
 ---
 
@@ -165,7 +182,7 @@ Later refresh items:
 The next company in the growth / satellite list is:
 
 ```text
-Fiem Industries
+Time Technoplast
 ```
 
 The next company should be analysed using the same institutional sequence:
