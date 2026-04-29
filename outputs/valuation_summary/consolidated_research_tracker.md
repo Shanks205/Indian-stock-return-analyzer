@@ -29,7 +29,7 @@ This tracker records the status of each company valuation inside the repository.
 |---|---|---|---|---|---|---|---|---|
 | Hero MotoCorp | Core value / quality | Public-Source Complete v1 | Added | Added | Added | Added | Build script added; workbook generated locally | Later audited FY26 refresh, beta regression, and date-consistent peer numerical table |
 | Natco Pharma | Core value / quality | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, beta regression, and date-consistent peer numerical table |
-| NALCO | Core value / quality | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
+| NALCO | Core value / quality | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, commodity deck, beta regression, and peer table |
 | Hindustan Zinc | Core value / quality | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
 | CPCL | Core value / quality | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
 | Sharda Cropchem | Core value / quality | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
@@ -77,6 +77,23 @@ Completed files:
 - `models/company_dcf_models/natco_pharma/research_completion_audit.md`
 - `outputs/valuation_summary/natco_pharma_numerical_refresh_v1.md`
 
+### NALCO
+
+Current classification:
+
+```text
+Public-Source Complete v1 — audited-data refresh pending
+```
+
+Completed files:
+
+- `models/company_dcf_models/nalco/nalco_research_note.md`
+- `models/company_dcf_models/nalco/assumptions_log.md`
+- `models/company_dcf_models/nalco/source_log.md`
+- `models/company_dcf_models/nalco/peer_framework_v1.md`
+- `models/company_dcf_models/nalco/research_completion_audit.md`
+- `outputs/valuation_summary/nalco_numerical_refresh_v1.md`
+
 Research is now complete for public-source v1. Remaining items are data-refresh dependencies rather than missing-research sections.
 
 Later refresh items:
@@ -85,9 +102,10 @@ Later refresh items:
 - actual FY26 revenue, EBIT, tax, capex, and working-capital refresh
 - share count verification
 - cash and debt reconciliation
-- beta regression vs Nifty Pharma / Nifty 50
+- beta regression vs Nifty Metal / Nifty 50
 - date-consistent peer numerical table validation
 - latest market price refresh
+- aluminium/alumina commodity price deck refresh
 
 ---
 
@@ -96,7 +114,7 @@ Later refresh items:
 The next company in the core value / quality list is:
 
 ```text
-NALCO
+Hindustan Zinc
 ```
 
 The next company should be analysed using the same institutional sequence:
