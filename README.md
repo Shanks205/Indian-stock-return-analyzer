@@ -1,10 +1,61 @@
 # Indian Equity Valuation Lab
 
-A practical Python and Excel-based equity research project for Indian listed companies, combining stock-return analysis, fundamental screening, Piotroski F-Score, discounted cash flow valuation, WACC stress testing, margin-of-safety rules, and barbell portfolio construction.
+A Python, Excel and research-documentation project for building institutional-style public-source equity research on Indian listed companies.
 
-This repository started as a beginner-friendly Indian stock return analyzer. It is now being expanded into a full equity valuation lab suitable for finance learning, GitHub portfolio development, interview discussion, and future research-paper development.
+This repository started as a beginner-friendly Indian stock return analyzer and has now been expanded into a complete 10-company equity valuation lab covering DCF logic, WACC frameworks, peer comparison, risk matrices, source logs, assumption logs and consolidated valuation tracking.
 
-> This project is for education, research, and portfolio demonstration only. It is not investment advice or a buy/sell recommendation.
+> This project is for education, research practice and portfolio demonstration only. It is not investment advice or a buy/sell recommendation.
+
+---
+
+## Project status
+
+```text
+Status: Public-Source Complete v1
+Coverage: 10 Indian listed companies
+Research type: Institutional-style preliminary valuation research
+Next phase: audited FY26 refresh + Excel dashboard automation
+```
+
+All companies in the current tracker now have:
+
+- research note
+- assumptions log
+- source log
+- peer framework
+- numerical refresh summary
+- research completion audit
+- consolidated tracker entry
+
+---
+
+## Completed company coverage
+
+| # | Company | Sector / Theme | Status |
+|---:|---|---|---|
+| 1 | Hero MotoCorp | Auto / Two-wheelers | Public-Source Complete v1 |
+| 2 | Natco Pharma | Pharma / Complex generics | Public-Source Complete v1 |
+| 3 | NALCO | Metals / Aluminium | Public-Source Complete v1 |
+| 4 | Hindustan Zinc | Metals / Zinc-Silver | Public-Source Complete v1 |
+| 5 | CPCL | Oil & Gas / Refining | Public-Source Complete v1 |
+| 6 | Sharda Cropchem | Agrochemicals | Public-Source Complete v1 |
+| 7 | Fiem Industries | Auto Components | Public-Source Complete v1 |
+| 8 | Time Technoplast | Industrial Packaging / Polymers | Public-Source Complete v1 |
+| 9 | Force Motors | Auto / Vans & Engines | Public-Source Complete v1 |
+| 10 | Triveni Turbine | Capital Goods / Turbines | Public-Source Complete v1 |
+
+---
+
+## Key project files
+
+| File | Purpose |
+|---|---|
+| `docs/institutional_research_layer.md` | Defines the research standard and classification system |
+| `outputs/valuation_summary/consolidated_research_tracker.md` | Tracks completion status of all company research packs |
+| `outputs/valuation_summary/consolidated_valuation_dashboard.md` | Summarizes all 10 companies in one dashboard |
+| `src/dcf_model.py` | Reusable DCF valuation skeleton |
+| `src/piotroski_score.py` | Piotroski F-Score module |
+| `scripts/build_hero_motocorp_dcf_model.py` | Example Excel DCF workbook builder |
 
 ---
 
@@ -12,123 +63,81 @@ This repository started as a beginner-friendly Indian stock return analyzer. It 
 
 The objective is to build a repeatable analyst-style framework for evaluating Indian equities.
 
-The project aims to answer:
-
-> Can a disciplined framework combining accounting quality, intrinsic valuation, margin of safety, and portfolio-fit rules improve Indian equity selection compared with simple return analysis?
-
-The final project will move from raw market data to a structured investment research output:
+The project moves from raw stock analysis to structured equity research:
 
 ```text
 Stock universe
 → Fundamental screening
-→ Piotroski F-Score
-→ Historical financial analysis
-→ DCF valuation
+→ Financial performance review
+→ DCF valuation logic
+→ WACC framework
 → Scenario and sensitivity analysis
-→ Margin-of-safety decision
-→ Portfolio-fit score
-→ Analyst-style research summary
+→ Peer comparison
+→ Risk matrix
+→ Source and assumption logs
+→ Research completion audit
+→ Consolidated valuation dashboard
 ```
+
+The project aims to answer:
+
+> Can a disciplined framework combining accounting quality, intrinsic valuation, source discipline, assumption tracking and risk analysis improve equity research quality compared with simple return analysis?
 
 ---
 
-## Institutional-style research layer
+## Research classification
 
-The repository now includes an institutional-style research layer that separates **Final Research v1** from fully institutional-grade published research.
-
-Current label used for completed company research:
+The repository uses the following classification for completed company research:
 
 ```text
-Final Research v1 — Institutional-Style Preliminary Valuation
+Public-Source Complete v1 — audited-data refresh pending
 ```
 
-This means the structure, thesis, assumptions, DCF logic, WACC framework, peer framework, scenario analysis, risk matrix, and data-quality status are documented.
+This means each company has a complete public-source research pack suitable for:
 
-It does **not** mean the research is compliance-approved or fully publication-grade. A fully institutional-grade version still requires audited annual report reconciliation, latest quarterly data, verified peer numerical tables, live market data, WACC refresh, and compliance-style review.
+- GitHub portfolio presentation
+- finance interview discussion
+- equity research learning
+- valuation-methodology demonstration
+- future audited-data refresh
 
-Key files added:
+It does not mean the research is fully institutional-grade or publication-final.
 
-- `docs/institutional_research_layer.md`
-- `models/company_dcf_models/hero_motocorp/hero_motocorp_research_note.md`
-- `models/company_dcf_models/hero_motocorp/assumptions_log.md`
-- `models/company_dcf_models/hero_motocorp/source_log.md`
-- `outputs/valuation_summary/consolidated_research_tracker.md`
+A fully institutional-grade version would still require:
 
----
-
-## Why this project matters
-
-This project is designed to demonstrate skills relevant to:
-
-- Financial analysis
-- Equity research
-- Investment banking
-- Portfolio analytics
-- Fundamental valuation
-- Python-based financial modeling
-- Excel-based valuation modeling
-- Research documentation
-
-It connects practical finance concepts with Python implementation and analyst-style reporting.
+- audited FY26 annual report reconciliation
+- live market price refresh
+- share-count verification
+- net debt / cash reconciliation
+- peer numerical table validation
+- beta regression
+- WACC refinement
+- independent model review
 
 ---
 
-## Current status
+## Research pack structure
 
-### Completed foundation
+Each company folder follows the same structure:
 
-- Historical stock price download using `yfinance`
-- Daily returns
-- Cumulative returns
-- Annualized return
-- Annualized volatility
-- Sharpe ratio
-- Maximum drawdown
-- Charts
-- Excel export
-- Beginner-friendly methodology notes
+```text
+models/company_dcf_models/company_name/
+├── company_research_note.md
+├── assumptions_log.md
+├── source_log.md
+├── peer_framework_v1.md
+└── research_completion_audit.md
+```
 
-### New valuation-lab extension
+Each company also has a numerical summary in:
 
-The project is now being expanded with:
-
-- Piotroski F-Score module
-- FCFF DCF model skeleton
-- Equity valuation methodology
-- Research pipeline documentation
-- Investment banking-style project blueprint
-- Institutional-style research layer
-- Company-level assumption logs
-- Company-level source logs
-- Consolidated research tracker
+```text
+outputs/valuation_summary/company_name_numerical_refresh_v1.md
+```
 
 ---
 
-## Initial company universe
-
-The first research universe follows a barbell framework: core value/quality companies plus selective growth companies.
-
-### Core value / quality candidates
-
-- Hero MotoCorp
-- Natco Pharma
-- NALCO
-- Hindustan Zinc
-- CPCL
-- Sharda Cropchem
-
-### Growth / satellite candidates
-
-- Fiem Industries
-- Time Technoplast
-- Force Motors
-- Triveni Turbine
-
-Hero MotoCorp is now documented as the first **Final Research v1 — Institutional-Style Preliminary Valuation** case inside the repository. Fiem Industries has been analysed in a first-pass Excel DCF model outside the repository and should be standardized next.
-
----
-
-## Project structure
+## Current project structure
 
 ```text
 Indian-stock-return-analyzer/
@@ -147,6 +156,9 @@ Indian-stock-return-analyzer/
 │   ├── piotroski_score.py
 │   └── dcf_model.py
 │
+├── scripts/
+│   └── build_hero_motocorp_dcf_model.py
+│
 ├── docs/
 │   ├── methodology.md
 │   ├── interview_notes.md
@@ -155,76 +167,38 @@ Indian-stock-return-analyzer/
 │   ├── research_pipeline.md
 │   └── institutional_research_layer.md
 │
-├── data/
-│   ├── raw/
-│   └── processed/
-│
 ├── models/
 │   └── company_dcf_models/
-│       └── hero_motocorp/
-│           ├── hero_motocorp_research_note.md
-│           ├── assumptions_log.md
-│           └── source_log.md
+│       ├── hero_motocorp/
+│       ├── natco_pharma/
+│       ├── nalco/
+│       ├── hindustan_zinc/
+│       ├── cpcl/
+│       ├── sharda_cropchem/
+│       ├── fiem_industries/
+│       ├── time_technoplast/
+│       ├── force_motors/
+│       └── triveni_turbine/
 │
 ├── outputs/
-│   ├── .gitkeep
 │   ├── charts/
 │   └── valuation_summary/
-│       └── consolidated_research_tracker.md
+│       ├── consolidated_research_tracker.md
+│       ├── consolidated_valuation_dashboard.md
+│       ├── hero_motocorp_numerical_refresh_v1.md
+│       ├── natco_pharma_numerical_refresh_v1.md
+│       ├── nalco_numerical_refresh_v1.md
+│       ├── hindustan_zinc_numerical_refresh_v1.md
+│       ├── cpcl_numerical_refresh_v1.md
+│       ├── sharda_cropchem_numerical_refresh_v1.md
+│       ├── fiem_industries_numerical_refresh_v1.md
+│       ├── time_technoplast_numerical_refresh_v1.md
+│       ├── force_motors_numerical_refresh_v1.md
+│       └── triveni_turbine_numerical_refresh_v1.md
 │
 └── paper/
     └── ssrn_working_paper_draft/
 ```
-
-Some folders may be added gradually as the project develops.
-
----
-
-## Core modules
-
-### 1. Stock return analyzer
-
-The original project calculates:
-
-- daily returns
-- cumulative returns
-- annualized return
-- annualized volatility
-- Sharpe ratio
-- maximum drawdown
-- price chart
-- cumulative return chart
-- drawdown chart
-- Excel performance summary
-
-### 2. Piotroski F-Score module
-
-`src/piotroski_score.py` calculates the 9-point Piotroski F-Score using profitability, leverage/liquidity, and operating-efficiency signals.
-
-The score is based on:
-
-1. Positive net income
-2. Positive operating cash flow
-3. Improving ROA
-4. Operating cash flow greater than net income
-5. Lower leverage
-6. Improving current ratio
-7. No equity dilution
-8. Improving gross margin
-9. Improving asset turnover
-
-### 3. DCF valuation module
-
-`src/dcf_model.py` provides a reusable free cash flow to firm valuation skeleton.
-
-The model estimates:
-
-- projected FCFF
-- present value of forecast cash flows
-- terminal value
-- enterprise value
-- equity value
-- intrinsic value per share
 
 ---
 
@@ -244,10 +218,10 @@ FCFF = EBIT × (1 - Tax Rate) + Depreciation and Amortization - Capital Expendit
 WACC = Cost of Equity × Equity Weight + After-tax Cost of Debt × Debt Weight
 ```
 
-Cost of equity is estimated using:
+### Cost of equity framework
 
 ```text
-Cost of Equity = Risk-free Rate + Beta × Equity Risk Premium + Company-specific Risk Premium
+Cost of Equity = Risk-free Rate + Beta × Equity Risk Premium + Company-Specific Risk Premium
 ```
 
 ### Terminal value
@@ -258,44 +232,47 @@ Terminal Value = Final Year FCFF × (1 + Terminal Growth) / (WACC - Terminal Gro
 
 ---
 
-## Analyst checks added to every valuation
+## Analyst checks applied to each company
 
-Each company valuation should include:
+Each company valuation includes:
 
-- historical financial analysis
+- business overview
+- industry context
+- investment thesis
+- growth-driver classification
+- financial performance review
+- DCF assumption justification
+- WACC framework
+- peer framework
+- scenario analysis
+- sensitivity framework
+- risk matrix
 - source log
-- assumption log
-- WACC build-up
-- base, bear, and bull scenarios
-- WACC vs terminal-growth sensitivity
-- margin-of-safety calculation
-- risk-regime check
-- AI attention-bias check
-- governance check
-- cash-conversion check
-- portfolio-fit conclusion
+- assumptions log
+- data-quality status
+- research completion audit
 
 ---
 
-## Future research-paper direction
+## Skills demonstrated
 
-This project may later be converted into a working paper for SSRN.
+This project demonstrates:
 
-Possible paper title:
-
-> From Screening to Intrinsic Value: A Practical Fundamental Research Framework for Indian Stocks
-
-Possible research themes:
-
-- DCF-implied undervaluation in Indian equities
-- Piotroski F-Score as a quality filter before valuation
-- Margin of safety and portfolio construction
-- Barbell strategy combining value and growth stocks
-- Risk-regime and WACC stress testing in Indian equity valuation
+- equity research writing
+- DCF valuation logic
+- WACC construction
+- scenario and sensitivity analysis
+- peer-comparison design
+- public-source research discipline
+- financial modelling structure
+- Python-based finance tooling
+- Excel model generation
+- project documentation
+- GitHub portfolio presentation
 
 ---
 
-## How to run the current project
+## How to run the current code
 
 Install the required Python libraries:
 
@@ -321,21 +298,47 @@ Run the DCF module demo:
 python src/dcf_model.py
 ```
 
+Build the Hero MotoCorp Excel DCF workbook:
+
+```bash
+python scripts/build_hero_motocorp_dcf_model.py
+```
+
 ---
 
-## Tools and libraries
+## Future upgrades
 
-- Python
-- pandas
-- numpy
-- matplotlib
-- yfinance
-- openpyxl
-- Excel
-- GitHub
+The next phase of this project should include:
+
+1. Excel dashboard for all 10 companies
+2. Python-generated consolidated valuation summary
+3. date-consistent peer numerical tables
+4. beta regression using historical stock and index data
+5. FY26 audited annual report refresh
+6. market-price refresh and valuation-range update
+7. charts for fair value sensitivity and sector comparison
+8. final research-paper style write-up
+
+---
+
+## Future research-paper direction
+
+Possible working-paper title:
+
+> From Screening to Intrinsic Value: A Practical Fundamental Research Framework for Indian Stocks
+
+Possible research themes:
+
+- DCF-implied undervaluation in Indian equities
+- public-source equity research discipline
+- Piotroski F-Score as a quality filter before valuation
+- margin of safety and portfolio construction
+- barbell strategy combining value and growth stocks
+- WACC stress testing in Indian equity valuation
+- sector-specific normalization across autos, pharma, metals, refining, agrochemicals and capital goods
 
 ---
 
 ## Disclaimer
 
-This repository is for education, research, and portfolio demonstration only. It does not provide investment advice, financial advice, or buy/sell recommendations. All valuation outputs depend heavily on assumptions and must be independently verified before use.
+This repository is for education, research practice and portfolio demonstration only. It does not provide investment advice, financial advice or buy/sell recommendations. All valuation outputs depend heavily on assumptions and must be independently verified before real investment use.
