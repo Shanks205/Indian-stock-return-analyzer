@@ -2,30 +2,25 @@
 
 A Python, Excel and research-documentation project for building institutional-style public-source equity research on Indian listed companies.
 
-This repository started as a beginner-friendly Indian stock return analyzer and has now been expanded into a complete 10-company equity valuation lab covering DCF logic, WACC frameworks, peer comparison, risk matrices, source logs, assumption logs and consolidated valuation tracking.
+This repository started as a beginner-friendly Indian stock return analyzer and has now been expanded into a complete 10-company equity valuation lab covering DCF logic, WACC frameworks, peer comparison, risk matrices, source logs, assumption logs, Excel dashboards and consolidated valuation tracking.
 
 > This project is for education, research practice and portfolio demonstration only. It is not investment advice or a buy/sell recommendation.
 
 ---
 
-## Project status
+## Final project status
 
 ```text
-Status: Public-Source Complete v1
+Final Status: Public-Source Complete v1
 Coverage: 10 Indian listed companies
 Research type: Institutional-style preliminary valuation research
-Next phase: audited FY26 refresh + Excel dashboard automation
+Project stage: Complete for GitHub portfolio / interview discussion
+Future stage: audited FY26 refresh and validation
 ```
 
-All companies in the current tracker now have:
+The project is complete at the intended professional portfolio level.
 
-- research note
-- assumptions log
-- source log
-- peer framework
-- numerical refresh summary
-- research completion audit
-- consolidated tracker entry
+It is not labelled as fully institutional-grade published research because final institutional publication would still require audited FY26 annual-report reconciliation, live market data, date-consistent peer numerical tables, verified beta regressions, independent model review and compliance-style review.
 
 ---
 
@@ -46,28 +41,52 @@ All companies in the current tracker now have:
 
 ---
 
+## What has been completed
+
+Each company now has:
+
+- institutional-style research note
+- assumptions log
+- source log
+- peer framework
+- numerical refresh summary
+- research completion audit
+- consolidated tracker entry
+
+The project also includes:
+
+- consolidated valuation dashboard
+- 10-company Excel DCF workbook pack
+- consolidated Excel dashboard generator
+- company DCF workbook-pack generator
+- beta regression pipeline
+- peer-table refresh template
+- final project completion report
+- final audit checklist
+
+---
+
 ## Key project files
 
 | File | Purpose |
 |---|---|
+| `docs/final_project_completion_report.md` | Final project completion report |
+| `docs/final_audit_checklist.md` | Final audit checklist confirming completion status |
 | `docs/institutional_research_layer.md` | Defines the research standard and classification system |
 | `outputs/valuation_summary/consolidated_research_tracker.md` | Tracks completion status of all company research packs |
 | `outputs/valuation_summary/consolidated_valuation_dashboard.md` | Summarizes all 10 companies in one dashboard |
-| `src/dcf_model.py` | Reusable DCF valuation skeleton |
-| `src/piotroski_score.py` | Piotroski F-Score module |
-| `scripts/build_hero_motocorp_dcf_model.py` | Example Excel DCF workbook builder |
 | `scripts/build_consolidated_valuation_dashboard.py` | Builds the consolidated Excel dashboard workbook |
 | `scripts/build_company_dcf_workbook_pack.py` | Builds the 10-company Excel DCF workbook pack |
 | `scripts/beta_regression_pipeline.py` | Calculates reproducible beta estimates for WACC refresh |
 | `scripts/peer_table_template_builder.py` | Creates a date-consistent peer-table refresh template |
+| `src/dcf_model.py` | Reusable DCF valuation skeleton |
+| `src/piotroski_score.py` | Piotroski F-Score module |
 
 ---
 
 ## Project objective
 
 The objective is to build a repeatable analyst-style framework for evaluating Indian equities.
-
-The project moves from raw stock analysis to structured equity research:
 
 ```text
 Stock universe
@@ -81,17 +100,16 @@ Stock universe
 → Source and assumption logs
 → Research completion audit
 → Consolidated valuation dashboard
+→ Final audit and project completion report
 ```
 
-The project aims to answer:
-
-> Can a disciplined framework combining accounting quality, intrinsic valuation, source discipline, assumption tracking and risk analysis improve equity research quality compared with simple return analysis?
+The project demonstrates how a structured valuation framework can improve equity research quality compared with simple return analysis.
 
 ---
 
 ## Research classification
 
-The repository uses the following classification for completed company research:
+The repository uses the following final classification:
 
 ```text
 Public-Source Complete v1 — audited-data refresh pending
@@ -114,7 +132,7 @@ A fully institutional-grade version would still require:
 - share-count verification
 - net debt / cash reconciliation
 - peer numerical table validation
-- beta regression
+- beta regression review
 - WACC refinement
 - independent model review
 
@@ -138,146 +156,6 @@ Each company also has a numerical summary in:
 ```text
 outputs/valuation_summary/company_name_numerical_refresh_v1.md
 ```
-
----
-
-## Current project structure
-
-```text
-Indian-stock-return-analyzer/
-│
-├── README.md
-├── AGENTS.md
-├── requirements.txt
-├── .gitignore
-│
-├── src/
-│   ├── main.py
-│   ├── data_loader.py
-│   ├── calculations.py
-│   ├── charts.py
-│   ├── excel_export.py
-│   ├── piotroski_score.py
-│   └── dcf_model.py
-│
-├── scripts/
-│   ├── build_hero_motocorp_dcf_model.py
-│   ├── build_consolidated_valuation_dashboard.py
-│   ├── build_company_dcf_workbook_pack.py
-│   ├── beta_regression_pipeline.py
-│   └── peer_table_template_builder.py
-│
-├── docs/
-│   ├── methodology.md
-│   ├── interview_notes.md
-│   ├── equity_valuation_lab_blueprint.md
-│   ├── valuation_methodology.md
-│   ├── research_pipeline.md
-│   └── institutional_research_layer.md
-│
-├── models/
-│   └── company_dcf_models/
-│       ├── hero_motocorp/
-│       ├── natco_pharma/
-│       ├── nalco/
-│       ├── hindustan_zinc/
-│       ├── cpcl/
-│       ├── sharda_cropchem/
-│       ├── fiem_industries/
-│       ├── time_technoplast/
-│       ├── force_motors/
-│       └── triveni_turbine/
-│
-├── outputs/
-│   ├── charts/
-│   └── valuation_summary/
-│       ├── consolidated_research_tracker.md
-│       ├── consolidated_valuation_dashboard.md
-│       ├── company_dcf_workbook_pack_v1.xlsx
-│       ├── hero_motocorp_numerical_refresh_v1.md
-│       ├── natco_pharma_numerical_refresh_v1.md
-│       ├── nalco_numerical_refresh_v1.md
-│       ├── hindustan_zinc_numerical_refresh_v1.md
-│       ├── cpcl_numerical_refresh_v1.md
-│       ├── sharda_cropchem_numerical_refresh_v1.md
-│       ├── fiem_industries_numerical_refresh_v1.md
-│       ├── time_technoplast_numerical_refresh_v1.md
-│       ├── force_motors_numerical_refresh_v1.md
-│       └── triveni_turbine_numerical_refresh_v1.md
-│
-└── paper/
-    └── ssrn_working_paper_draft/
-```
-
----
-
-## Valuation methodology
-
-The project uses FCFF DCF valuation for non-financial companies.
-
-### FCFF formula
-
-```text
-FCFF = EBIT × (1 - Tax Rate) + Depreciation and Amortization - Capital Expenditure - Change in Net Working Capital
-```
-
-### WACC framework
-
-```text
-WACC = Cost of Equity × Equity Weight + After-tax Cost of Debt × Debt Weight
-```
-
-### Cost of equity framework
-
-```text
-Cost of Equity = Risk-free Rate + Beta × Equity Risk Premium + Company-Specific Risk Premium
-```
-
-### Terminal value
-
-```text
-Terminal Value = Final Year FCFF × (1 + Terminal Growth) / (WACC - Terminal Growth)
-```
-
----
-
-## Analyst checks applied to each company
-
-Each company valuation includes:
-
-- business overview
-- industry context
-- investment thesis
-- growth-driver classification
-- financial performance review
-- DCF assumption justification
-- WACC framework
-- peer framework
-- scenario analysis
-- sensitivity framework
-- risk matrix
-- source log
-- assumptions log
-- data-quality status
-- research completion audit
-
----
-
-## Skills demonstrated
-
-This project demonstrates:
-
-- equity research writing
-- DCF valuation logic
-- WACC construction
-- scenario and sensitivity analysis
-- peer-comparison design
-- public-source research discipline
-- financial modelling structure
-- Python-based finance tooling
-- Excel model generation
-- project documentation
-- GitHub portfolio presentation
 
 ---
 
@@ -339,9 +217,29 @@ python scripts/peer_table_template_builder.py
 
 ---
 
-## Future upgrades
+## Skills demonstrated
 
-The next phase of this project should include:
+This project demonstrates:
+
+- equity research writing
+- DCF valuation logic
+- WACC construction
+- scenario and sensitivity analysis
+- peer-comparison design
+- public-source research discipline
+- financial modelling structure
+- Python-based finance tooling
+- Excel model generation
+- project documentation
+- GitHub portfolio presentation
+
+---
+
+## Future refresh work
+
+The project is complete at Public-Source Complete v1 level. Future work should be treated as data refresh and validation, not missing project completion.
+
+Future refresh items:
 
 1. audited FY26 annual report refresh
 2. date-consistent peer numerical tables
@@ -352,21 +250,11 @@ The next phase of this project should include:
 
 ---
 
-## Future research-paper direction
+## Suggested portfolio description
 
-Possible working-paper title:
-
-> From Screening to Intrinsic Value: A Practical Fundamental Research Framework for Indian Stocks
-
-Possible research themes:
-
-- DCF-implied undervaluation in Indian equities
-- public-source equity research discipline
-- Piotroski F-Score as a quality filter before valuation
-- margin of safety and portfolio construction
-- barbell strategy combining value and growth stocks
-- WACC stress testing in Indian equity valuation
-- sector-specific normalization across autos, pharma, metals, refining, agrochemicals and capital goods
+```text
+Built a 10-company Indian Equity Valuation Lab combining DCF modelling, WACC frameworks, peer analysis, risk matrices, source logs, assumption tracking and Excel/Python automation. The project demonstrates institutional-style public-source equity research and is structured for future audited-data refresh.
+```
 
 ---
 
