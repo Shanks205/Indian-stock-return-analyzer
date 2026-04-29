@@ -35,7 +35,7 @@ This tracker records the status of each company valuation inside the repository.
 | Sharda Cropchem | Core value / quality | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, working-capital days, beta regression, and peer table |
 | Fiem Industries | Growth / satellite | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, customer mix, beta regression, and peer table |
 | Time Technoplast | Growth / satellite | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, value-added mix, working-capital days, beta regression, and peer table |
-| Force Motors | Growth / satellite | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
+| Force Motors | Growth / satellite | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, exceptional-item normalization, beta regression, and peer table |
 | Triveni Turbine | Growth / satellite | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
 
 ---
@@ -179,27 +179,45 @@ Completed files:
 - `models/company_dcf_models/time_technoplast/research_completion_audit.md`
 - `outputs/valuation_summary/time_technoplast_numerical_refresh_v1.md`
 
+### Force Motors
+
+Current classification:
+
+```text
+Public-Source Complete v1 — audited-data refresh pending
+```
+
+Completed files:
+
+- `models/company_dcf_models/force_motors/force_motors_research_note.md`
+- `models/company_dcf_models/force_motors/assumptions_log.md`
+- `models/company_dcf_models/force_motors/source_log.md`
+- `models/company_dcf_models/force_motors/peer_framework_v1.md`
+- `models/company_dcf_models/force_motors/research_completion_audit.md`
+- `outputs/valuation_summary/force_motors_numerical_refresh_v1.md`
+
 Research is now complete for public-source v1. Remaining items are data-refresh dependencies rather than missing-research sections.
 
 Later refresh items:
 
 - audited FY26 annual report reconciliation
 - actual FY26 revenue, EBIT, tax, capex, and working-capital refresh
+- exceptional item normalization
 - share count verification
 - cash and debt reconciliation
-- beta regression vs packaging / industrial peers
+- beta regression vs Nifty Auto / Nifty 50
 - date-consistent peer numerical table validation
 - latest market price refresh
-- working-capital days and value-added product mix refresh
+- product and segment mix refresh
 
 ---
 
 ## Next recommended company
 
-The next company in the growth / satellite list is:
+The final remaining company in the current tracker is:
 
 ```text
-Force Motors
+Triveni Turbine
 ```
 
 The next company should be analysed using the same institutional sequence:
