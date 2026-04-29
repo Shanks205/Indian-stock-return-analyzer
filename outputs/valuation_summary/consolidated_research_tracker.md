@@ -17,25 +17,26 @@ This tracker records the status of each company valuation inside the repository.
 | DCF in progress | DCF model being built |
 | Final Research v1 complete | Institutional-style preliminary research note completed |
 | Numerical refresh v1 complete | DCF numerical assumptions, WACC framework, sensitivity framework, and summary added |
-| Needs audited refresh | Requires latest annual report, filings, and market data update |
-| Fully institutional-grade | Only after audited reconciliation, peer validation, and compliance-style review |
+| Public-Source Complete v1 | Complete for GitHub/interview/public-source educational research, with audited-data refresh still pending |
+| Audited refresh pending | Requires later annual-report, filings, and date-consistent market-data update |
+| Fully institutional-grade | Only after audited reconciliation, peer numerical validation, and independent review |
 
 ---
 
 ## Company tracker
 
-| Company | Category | Status | Research note | Assumptions log | Source log | DCF model | Next action |
-|---|---|---|---|---|---|---|---|
-| Hero MotoCorp | Core value / quality | Numerical refresh v1 complete | Added | Added | Added | Build script added; workbook generated locally | Add audited FY26 refresh, beta regression, and peer numerical table |
-| Natco Pharma | Core value / quality | Not started | Pending | Pending | Pending | Pending | Begin company research |
-| NALCO | Core value / quality | Not started | Pending | Pending | Pending | Pending | Begin company research |
-| Hindustan Zinc | Core value / quality | Not started | Pending | Pending | Pending | Pending | Begin company research |
-| CPCL | Core value / quality | Not started | Pending | Pending | Pending | Pending | Begin company research |
-| Sharda Cropchem | Core value / quality | Not started | Pending | Pending | Pending | Pending | Begin company research |
-| Fiem Industries | Growth / satellite | Not started in repo | Pending | Pending | Pending | Pending | Standardize prior model inside repo |
-| Time Technoplast | Growth / satellite | Not started | Pending | Pending | Pending | Pending | Begin company research |
-| Force Motors | Growth / satellite | Not started | Pending | Pending | Pending | Pending | Begin company research |
-| Triveni Turbine | Growth / satellite | Not started | Pending | Pending | Pending | Pending | Begin company research |
+| Company | Category | Status | Research note | Assumptions log | Source log | Peer framework | DCF model | Next action |
+|---|---|---|---|---|---|---|---|---|
+| Hero MotoCorp | Core value / quality | Public-Source Complete v1 | Added | Added | Added | Added | Build script added; workbook generated locally | Later audited FY26 refresh, beta regression, and date-consistent peer numerical table |
+| Natco Pharma | Core value / quality | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
+| NALCO | Core value / quality | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
+| Hindustan Zinc | Core value / quality | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
+| CPCL | Core value / quality | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
+| Sharda Cropchem | Core value / quality | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
+| Fiem Industries | Growth / satellite | Not started in repo | Pending | Pending | Pending | Pending | Pending | Standardize prior model inside repo |
+| Time Technoplast | Growth / satellite | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
+| Force Motors | Growth / satellite | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
+| Triveni Turbine | Growth / satellite | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
 
 ---
 
@@ -46,7 +47,7 @@ This tracker records the status of each company valuation inside the repository.
 Current classification:
 
 ```text
-Numerical refresh v1 complete — still needs audited FY26 data refresh
+Public-Source Complete v1 — audited-data refresh pending
 ```
 
 Completed files:
@@ -54,17 +55,21 @@ Completed files:
 - `models/company_dcf_models/hero_motocorp/hero_motocorp_research_note.md`
 - `models/company_dcf_models/hero_motocorp/assumptions_log.md`
 - `models/company_dcf_models/hero_motocorp/source_log.md`
+- `models/company_dcf_models/hero_motocorp/peer_framework_v1.md`
+- `models/company_dcf_models/hero_motocorp/research_completion_audit.md`
 - `outputs/valuation_summary/hero_motocorp_numerical_refresh_v1.md`
 - `scripts/build_hero_motocorp_dcf_model.py`
 
-Pending:
+Research is now complete for public-source v1. Remaining items are data-refresh dependencies rather than missing-research sections.
+
+Later refresh items:
 
 - audited FY26 annual report reconciliation
-- actual FY26 revenue, EBIT, tax, capex, and working capital refresh
+- actual FY26 revenue, EBIT, tax, capex, and working-capital refresh
 - share count verification
 - cash and debt reconciliation
 - beta regression vs Nifty 50 / Nifty Auto
-- peer numerical table validation
+- date-consistent peer numerical table validation
 - latest market price refresh
 
 ---
@@ -87,6 +92,7 @@ The next company should be analysed using the same institutional sequence:
 12. Data-quality status
 13. Final Research v1 conclusion
 14. Numerical DCF refresh
+15. Research completion audit
 
 ---
 
