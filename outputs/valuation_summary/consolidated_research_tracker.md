@@ -32,7 +32,7 @@ This tracker records the status of each company valuation inside the repository.
 | NALCO | Core value / quality | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, commodity deck, beta regression, and peer table |
 | Hindustan Zinc | Core value / quality | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, zinc/silver deck, beta regression, and peer table |
 | CPCL | Core value / quality | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, GRM deck, beta regression, and peer table |
-| Sharda Cropchem | Core value / quality | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
+| Sharda Cropchem | Core value / quality | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, working-capital days, beta regression, and peer table |
 | Fiem Industries | Growth / satellite | Not started in repo | Pending | Pending | Pending | Pending | Pending | Standardize prior model inside repo |
 | Time Technoplast | Growth / satellite | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
 | Force Motors | Growth / satellite | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
@@ -128,6 +128,23 @@ Completed files:
 - `models/company_dcf_models/cpcl/research_completion_audit.md`
 - `outputs/valuation_summary/cpcl_numerical_refresh_v1.md`
 
+### Sharda Cropchem
+
+Current classification:
+
+```text
+Public-Source Complete v1 — audited-data refresh pending
+```
+
+Completed files:
+
+- `models/company_dcf_models/sharda_cropchem/sharda_cropchem_research_note.md`
+- `models/company_dcf_models/sharda_cropchem/assumptions_log.md`
+- `models/company_dcf_models/sharda_cropchem/source_log.md`
+- `models/company_dcf_models/sharda_cropchem/peer_framework_v1.md`
+- `models/company_dcf_models/sharda_cropchem/research_completion_audit.md`
+- `outputs/valuation_summary/sharda_cropchem_numerical_refresh_v1.md`
+
 Research is now complete for public-source v1. Remaining items are data-refresh dependencies rather than missing-research sections.
 
 Later refresh items:
@@ -136,19 +153,19 @@ Later refresh items:
 - actual FY26 revenue, EBIT, tax, capex, and working-capital refresh
 - share count verification
 - cash and debt reconciliation
-- beta regression vs Nifty Energy / Nifty 50
+- beta regression vs chemical/agrochemical peer index
 - date-consistent peer numerical table validation
 - latest market price refresh
-- mid-cycle GRM deck refresh
+- working-capital days refresh
 
 ---
 
 ## Next recommended company
 
-The next company in the core value / quality list is:
+The next company in the growth / satellite list is:
 
 ```text
-Sharda Cropchem
+Fiem Industries
 ```
 
 The next company should be analysed using the same institutional sequence:
