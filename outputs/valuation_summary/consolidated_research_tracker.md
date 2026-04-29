@@ -28,7 +28,7 @@ This tracker records the status of each company valuation inside the repository.
 | Company | Category | Status | Research note | Assumptions log | Source log | Peer framework | DCF model | Next action |
 |---|---|---|---|---|---|---|---|---|
 | Hero MotoCorp | Core value / quality | Public-Source Complete v1 | Added | Added | Added | Added | Build script added; workbook generated locally | Later audited FY26 refresh, beta regression, and date-consistent peer numerical table |
-| Natco Pharma | Core value / quality | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
+| Natco Pharma | Core value / quality | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, beta regression, and date-consistent peer numerical table |
 | NALCO | Core value / quality | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
 | Hindustan Zinc | Core value / quality | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
 | CPCL | Core value / quality | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
@@ -40,7 +40,7 @@ This tracker records the status of each company valuation inside the repository.
 
 ---
 
-## Current completed company
+## Completed companies
 
 ### Hero MotoCorp
 
@@ -60,6 +60,23 @@ Completed files:
 - `outputs/valuation_summary/hero_motocorp_numerical_refresh_v1.md`
 - `scripts/build_hero_motocorp_dcf_model.py`
 
+### Natco Pharma
+
+Current classification:
+
+```text
+Public-Source Complete v1 — audited-data refresh pending
+```
+
+Completed files:
+
+- `models/company_dcf_models/natco_pharma/natco_pharma_research_note.md`
+- `models/company_dcf_models/natco_pharma/assumptions_log.md`
+- `models/company_dcf_models/natco_pharma/source_log.md`
+- `models/company_dcf_models/natco_pharma/peer_framework_v1.md`
+- `models/company_dcf_models/natco_pharma/research_completion_audit.md`
+- `outputs/valuation_summary/natco_pharma_numerical_refresh_v1.md`
+
 Research is now complete for public-source v1. Remaining items are data-refresh dependencies rather than missing-research sections.
 
 Later refresh items:
@@ -68,13 +85,19 @@ Later refresh items:
 - actual FY26 revenue, EBIT, tax, capex, and working-capital refresh
 - share count verification
 - cash and debt reconciliation
-- beta regression vs Nifty 50 / Nifty Auto
+- beta regression vs Nifty Pharma / Nifty 50
 - date-consistent peer numerical table validation
 - latest market price refresh
 
 ---
 
 ## Next recommended company
+
+The next company in the core value / quality list is:
+
+```text
+NALCO
+```
 
 The next company should be analysed using the same institutional sequence:
 
