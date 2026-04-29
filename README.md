@@ -32,6 +32,30 @@ Stock universe
 
 ---
 
+## Institutional-style research layer
+
+The repository now includes an institutional-style research layer that separates **Final Research v1** from fully institutional-grade published research.
+
+Current label used for completed company research:
+
+```text
+Final Research v1 — Institutional-Style Preliminary Valuation
+```
+
+This means the structure, thesis, assumptions, DCF logic, WACC framework, peer framework, scenario analysis, risk matrix, and data-quality status are documented.
+
+It does **not** mean the research is compliance-approved or fully publication-grade. A fully institutional-grade version still requires audited annual report reconciliation, latest quarterly data, verified peer numerical tables, live market data, WACC refresh, and compliance-style review.
+
+Key files added:
+
+- `docs/institutional_research_layer.md`
+- `models/company_dcf_models/hero_motocorp/hero_motocorp_research_note.md`
+- `models/company_dcf_models/hero_motocorp/assumptions_log.md`
+- `models/company_dcf_models/hero_motocorp/source_log.md`
+- `outputs/valuation_summary/consolidated_research_tracker.md`
+
+---
+
 ## Why this project matters
 
 This project is designed to demonstrate skills relevant to:
@@ -73,6 +97,10 @@ The project is now being expanded with:
 - Equity valuation methodology
 - Research pipeline documentation
 - Investment banking-style project blueprint
+- Institutional-style research layer
+- Company-level assumption logs
+- Company-level source logs
+- Consolidated research tracker
 
 ---
 
@@ -96,7 +124,7 @@ The first research universe follows a barbell framework: core value/quality comp
 - Force Motors
 - Triveni Turbine
 
-Hero MotoCorp and Fiem Industries have already been analysed in first-pass Excel DCF models outside this repository. The next step is to standardize those models inside the repository workflow.
+Hero MotoCorp is now documented as the first **Final Research v1 — Institutional-Style Preliminary Valuation** case inside the repository. Fiem Industries has been analysed in a first-pass Excel DCF model outside the repository and should be standardized next.
 
 ---
 
@@ -124,7 +152,8 @@ Indian-stock-return-analyzer/
 │   ├── interview_notes.md
 │   ├── equity_valuation_lab_blueprint.md
 │   ├── valuation_methodology.md
-│   └── research_pipeline.md
+│   ├── research_pipeline.md
+│   └── institutional_research_layer.md
 │
 ├── data/
 │   ├── raw/
@@ -132,11 +161,16 @@ Indian-stock-return-analyzer/
 │
 ├── models/
 │   └── company_dcf_models/
+│       └── hero_motocorp/
+│           ├── hero_motocorp_research_note.md
+│           ├── assumptions_log.md
+│           └── source_log.md
 │
 ├── outputs/
 │   ├── .gitkeep
 │   ├── charts/
 │   └── valuation_summary/
+│       └── consolidated_research_tracker.md
 │
 └── paper/
     └── ssrn_working_paper_draft/
