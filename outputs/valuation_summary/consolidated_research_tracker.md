@@ -34,7 +34,7 @@ This tracker records the status of each company valuation inside the repository.
 | CPCL | Core value / quality | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, GRM deck, beta regression, and peer table |
 | Sharda Cropchem | Core value / quality | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, working-capital days, beta regression, and peer table |
 | Fiem Industries | Growth / satellite | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, customer mix, beta regression, and peer table |
-| Time Technoplast | Growth / satellite | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
+| Time Technoplast | Growth / satellite | Public-Source Complete v1 | Added | Added | Added | Added | Numerical summary added | Later FY26 audited refresh, value-added mix, working-capital days, beta regression, and peer table |
 | Force Motors | Growth / satellite | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
 | Triveni Turbine | Growth / satellite | Not started | Pending | Pending | Pending | Pending | Pending | Begin company research |
 
@@ -162,6 +162,23 @@ Completed files:
 - `models/company_dcf_models/fiem_industries/research_completion_audit.md`
 - `outputs/valuation_summary/fiem_industries_numerical_refresh_v1.md`
 
+### Time Technoplast
+
+Current classification:
+
+```text
+Public-Source Complete v1 — audited-data refresh pending
+```
+
+Completed files:
+
+- `models/company_dcf_models/time_technoplast/time_technoplast_research_note.md`
+- `models/company_dcf_models/time_technoplast/assumptions_log.md`
+- `models/company_dcf_models/time_technoplast/source_log.md`
+- `models/company_dcf_models/time_technoplast/peer_framework_v1.md`
+- `models/company_dcf_models/time_technoplast/research_completion_audit.md`
+- `outputs/valuation_summary/time_technoplast_numerical_refresh_v1.md`
+
 Research is now complete for public-source v1. Remaining items are data-refresh dependencies rather than missing-research sections.
 
 Later refresh items:
@@ -170,10 +187,10 @@ Later refresh items:
 - actual FY26 revenue, EBIT, tax, capex, and working-capital refresh
 - share count verification
 - cash and debt reconciliation
-- beta regression vs Nifty Auto / Nifty 50
+- beta regression vs packaging / industrial peers
 - date-consistent peer numerical table validation
 - latest market price refresh
-- customer mix and two-wheeler exposure refresh
+- working-capital days and value-added product mix refresh
 
 ---
 
@@ -182,7 +199,7 @@ Later refresh items:
 The next company in the growth / satellite list is:
 
 ```text
-Time Technoplast
+Force Motors
 ```
 
 The next company should be analysed using the same institutional sequence:
