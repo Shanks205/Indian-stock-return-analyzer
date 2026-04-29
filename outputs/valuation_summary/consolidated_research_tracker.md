@@ -16,6 +16,7 @@ This tracker records the status of each company valuation inside the repository.
 | Research in progress | Business/financial analysis started |
 | DCF in progress | DCF model being built |
 | Final Research v1 complete | Institutional-style preliminary research note completed |
+| Numerical refresh v1 complete | DCF numerical assumptions, WACC framework, sensitivity framework, and summary added |
 | Needs audited refresh | Requires latest annual report, filings, and market data update |
 | Fully institutional-grade | Only after audited reconciliation, peer validation, and compliance-style review |
 
@@ -25,7 +26,7 @@ This tracker records the status of each company valuation inside the repository.
 
 | Company | Category | Status | Research note | Assumptions log | Source log | DCF model | Next action |
 |---|---|---|---|---|---|---|---|
-| Hero MotoCorp | Core value / quality | Final Research v1 complete | Added | Added | Added | Pending Excel upload / build | Add refreshed numerical DCF and peer table |
+| Hero MotoCorp | Core value / quality | Numerical refresh v1 complete | Added | Added | Added | Build script added; workbook generated locally | Add audited FY26 refresh, beta regression, and peer numerical table |
 | Natco Pharma | Core value / quality | Not started | Pending | Pending | Pending | Pending | Begin company research |
 | NALCO | Core value / quality | Not started | Pending | Pending | Pending | Pending | Begin company research |
 | Hindustan Zinc | Core value / quality | Not started | Pending | Pending | Pending | Pending | Begin company research |
@@ -45,7 +46,7 @@ This tracker records the status of each company valuation inside the repository.
 Current classification:
 
 ```text
-Final Research v1 — Institutional-Style Preliminary Valuation
+Numerical refresh v1 complete — still needs audited FY26 data refresh
 ```
 
 Completed files:
@@ -53,15 +54,18 @@ Completed files:
 - `models/company_dcf_models/hero_motocorp/hero_motocorp_research_note.md`
 - `models/company_dcf_models/hero_motocorp/assumptions_log.md`
 - `models/company_dcf_models/hero_motocorp/source_log.md`
+- `outputs/valuation_summary/hero_motocorp_numerical_refresh_v1.md`
+- `scripts/build_hero_motocorp_dcf_model.py`
 
 Pending:
 
-- Excel DCF upload / build
-- WACC numerical refresh
-- peer numerical table
-- sensitivity table
-- FY26 audited annual report reconciliation
-- latest market price and share count update
+- audited FY26 annual report reconciliation
+- actual FY26 revenue, EBIT, tax, capex, and working capital refresh
+- share count verification
+- cash and debt reconciliation
+- beta regression vs Nifty 50 / Nifty Auto
+- peer numerical table validation
+- latest market price refresh
 
 ---
 
@@ -82,6 +86,7 @@ The next company should be analysed using the same institutional sequence:
 11. Risk matrix
 12. Data-quality status
 13. Final Research v1 conclusion
+14. Numerical DCF refresh
 
 ---
 
