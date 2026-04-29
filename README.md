@@ -57,6 +57,7 @@ All companies in the current tracker now have:
 | `src/piotroski_score.py` | Piotroski F-Score module |
 | `scripts/build_hero_motocorp_dcf_model.py` | Example Excel DCF workbook builder |
 | `scripts/build_consolidated_valuation_dashboard.py` | Builds the consolidated Excel dashboard workbook |
+| `scripts/build_company_dcf_workbook_pack.py` | Builds the 10-company Excel DCF workbook pack |
 | `scripts/beta_regression_pipeline.py` | Calculates reproducible beta estimates for WACC refresh |
 | `scripts/peer_table_template_builder.py` | Creates a date-consistent peer-table refresh template |
 
@@ -162,6 +163,7 @@ Indian-stock-return-analyzer/
 ├── scripts/
 │   ├── build_hero_motocorp_dcf_model.py
 │   ├── build_consolidated_valuation_dashboard.py
+│   ├── build_company_dcf_workbook_pack.py
 │   ├── beta_regression_pipeline.py
 │   └── peer_table_template_builder.py
 │
@@ -191,6 +193,7 @@ Indian-stock-return-analyzer/
 │   └── valuation_summary/
 │       ├── consolidated_research_tracker.md
 │       ├── consolidated_valuation_dashboard.md
+│       ├── company_dcf_workbook_pack_v1.xlsx
 │       ├── hero_motocorp_numerical_refresh_v1.md
 │       ├── natco_pharma_numerical_refresh_v1.md
 │       ├── nalco_numerical_refresh_v1.md
@@ -316,6 +319,12 @@ Build the consolidated Excel dashboard:
 python scripts/build_consolidated_valuation_dashboard.py
 ```
 
+Build the 10-company Excel DCF workbook pack:
+
+```bash
+python scripts/build_company_dcf_workbook_pack.py
+```
+
 Build the beta regression workbook:
 
 ```bash
@@ -334,13 +343,12 @@ python scripts/peer_table_template_builder.py
 
 The next phase of this project should include:
 
-1. Excel DCF workbooks for the remaining nine companies
+1. audited FY26 annual report refresh
 2. date-consistent peer numerical tables
 3. beta regression review and WACC refinement
-4. FY26 audited annual report refresh
-5. market-price refresh and valuation-range update
-6. charts for fair value sensitivity and sector comparison
-7. final research-paper style write-up
+4. market-price refresh and valuation-range update
+5. charts for fair value sensitivity and sector comparison
+6. final research-paper style write-up
 
 ---
 
