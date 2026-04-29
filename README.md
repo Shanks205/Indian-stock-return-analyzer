@@ -56,6 +56,9 @@ All companies in the current tracker now have:
 | `src/dcf_model.py` | Reusable DCF valuation skeleton |
 | `src/piotroski_score.py` | Piotroski F-Score module |
 | `scripts/build_hero_motocorp_dcf_model.py` | Example Excel DCF workbook builder |
+| `scripts/build_consolidated_valuation_dashboard.py` | Builds the consolidated Excel dashboard workbook |
+| `scripts/beta_regression_pipeline.py` | Calculates reproducible beta estimates for WACC refresh |
+| `scripts/peer_table_template_builder.py` | Creates a date-consistent peer-table refresh template |
 
 ---
 
@@ -157,7 +160,10 @@ Indian-stock-return-analyzer/
 │   └── dcf_model.py
 │
 ├── scripts/
-│   └── build_hero_motocorp_dcf_model.py
+│   ├── build_hero_motocorp_dcf_model.py
+│   ├── build_consolidated_valuation_dashboard.py
+│   ├── beta_regression_pipeline.py
+│   └── peer_table_template_builder.py
 │
 ├── docs/
 │   ├── methodology.md
@@ -304,20 +310,37 @@ Build the Hero MotoCorp Excel DCF workbook:
 python scripts/build_hero_motocorp_dcf_model.py
 ```
 
+Build the consolidated Excel dashboard:
+
+```bash
+python scripts/build_consolidated_valuation_dashboard.py
+```
+
+Build the beta regression workbook:
+
+```bash
+python scripts/beta_regression_pipeline.py
+```
+
+Build the peer-table refresh template:
+
+```bash
+python scripts/peer_table_template_builder.py
+```
+
 ---
 
 ## Future upgrades
 
 The next phase of this project should include:
 
-1. Excel dashboard for all 10 companies
-2. Python-generated consolidated valuation summary
-3. date-consistent peer numerical tables
-4. beta regression using historical stock and index data
-5. FY26 audited annual report refresh
-6. market-price refresh and valuation-range update
-7. charts for fair value sensitivity and sector comparison
-8. final research-paper style write-up
+1. Excel DCF workbooks for the remaining nine companies
+2. date-consistent peer numerical tables
+3. beta regression review and WACC refinement
+4. FY26 audited annual report refresh
+5. market-price refresh and valuation-range update
+6. charts for fair value sensitivity and sector comparison
+7. final research-paper style write-up
 
 ---
 
