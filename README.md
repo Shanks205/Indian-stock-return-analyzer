@@ -63,6 +63,7 @@ The project also includes:
 - peer-table refresh template
 - final project completion report
 - final audit checklist
+- career presentation pack
 
 ---
 
@@ -72,6 +73,7 @@ The project also includes:
 |---|---|
 | `docs/final_project_completion_report.md` | Final project completion report |
 | `docs/final_audit_checklist.md` | Final audit checklist confirming completion status |
+| `docs/career_presentation_pack.md` | Resume bullets, GitHub description, LinkedIn post and interview pitch |
 | `docs/institutional_research_layer.md` | Defines the research standard and classification system |
 | `outputs/valuation_summary/consolidated_research_tracker.md` | Tracks completion status of all company research packs |
 | `outputs/valuation_summary/consolidated_valuation_dashboard.md` | Summarizes all 10 companies in one dashboard |
@@ -101,6 +103,7 @@ Stock universe
 → Research completion audit
 → Consolidated valuation dashboard
 → Final audit and project completion report
+→ Career presentation pack
 ```
 
 The project demonstrates how a structured valuation framework can improve equity research quality compared with simple return analysis.
