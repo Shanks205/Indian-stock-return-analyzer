@@ -1,17 +1,46 @@
 # From Screening to Intrinsic Value: A Public-Source Fundamental Valuation Framework for Indian Equities
 
-**Hithim Dabi and Himanshu Dabi**  
-Independent Researchers / Finance Project Portfolio  
-Date written: April 2026  
-Working paper draft for SSRN submission review
+**Himanshu Dabi**  
+Independent Researcher, India  
+MSc in International Management  
+Email: dabihithim@gmail.com
+
+**Hitesh Dabi**  
+Independent Researcher, India  
+MSc in International Management  
+Email: hithimdabi206@gmail.com
+
+**Corresponding author:** Himanshu Dabi, dabihithim@gmail.com  
+**Date written:** April 2026  
+**Paper type:** Working Paper
 
 ## Abstract
 
-This paper develops a public-source fundamental valuation framework for Indian listed equities and applies it to ten companies across autos, pharma, metals, refining, agrochemicals, industrial packaging, and capital goods. The study moves beyond simple return and ratio analysis by integrating free cash flow to the firm (FCFF) discounted cash flow (DCF) modelling, weighted average cost of capital (WACC) construction, peer-comparison design, scenario analysis, sensitivity analysis, risk matrices, source logs, assumption tracking, and Python/Excel automation. The central contribution is methodological: the paper demonstrates how sector-specific normalization can improve valuation discipline by preventing over-extrapolation of recent earnings, commodity-cycle margins, refining spreads, product-cycle profits, and one-off gains.
+This paper develops a public-source fundamental valuation framework for Indian listed equities and applies it to ten companies across autos, pharmaceuticals, metals, refining, agrochemicals, industrial packaging, auto components, and capital goods. The study moves beyond simple return, ratio, and screening-based analysis by integrating free cash flow to the firm (FCFF) discounted cash flow (DCF) modelling, weighted average cost of capital (WACC) construction, peer-comparison design, scenario analysis, sensitivity analysis, risk matrices, source logs, assumption tracking, and Python/Excel automation. The central contribution is methodological: the paper demonstrates how sector-specific normalization can improve valuation discipline by preventing over-extrapolation of recent earnings, commodity-cycle margins, refining spreads, product-cycle profits, and one-off gains.
 
-The framework is implemented through a combination of company-level research notes, numerical DCF summaries, Python scripts, and Excel dashboards. The results show that valuation logic must differ materially by sector. Commodity companies require mid-cycle margin assumptions, refiners require normalized gross refining margin (GRM) analysis, pharma companies require pipeline and product-cycle adjustments, auto suppliers require customer-concentration analysis, and capital-goods companies require order-book and execution-risk analysis. The paper also introduces a data-quality classification that separates "Public-Source Complete v1" research from fully institutional-grade research, highlighting the need for audited annual-report reconciliation, live market data, peer numerical tables, and beta regression before final valuation use. The study contributes a practical, reproducible, and transparent framework for early-stage equity research and finance portfolio development in the Indian market.
+The framework is implemented through company-level research notes, numerical DCF summaries, Python scripts, and Excel dashboards. The results show that valuation logic must differ materially by business model. Commodity companies require mid-cycle margin assumptions; refiners require normalized gross refining margin (GRM) analysis; pharma companies require pipeline and product-cycle adjustments; auto suppliers require customer-concentration analysis; and capital-goods companies require order-book and execution-risk analysis. The paper also introduces a data-quality classification that separates "Public-Source Complete v1" research from fully institutional-grade research, highlighting the need for audited annual-report reconciliation, live market data, peer numerical tables, and beta regression before final valuation use. The study contributes a practical, reproducible, and transparent framework for early-stage equity research and finance portfolio development in the Indian market.
 
 **Keywords:** Equity valuation; Indian equities; DCF; WACC; fundamental analysis; equity research; public-source research; financial modelling; peer comparison; risk analysis; Python; Excel dashboard.
+
+## Author Note
+
+Both authors are independent researchers based in India and hold an MSc in International Management. The authors developed this work as a finance research and valuation-methodology project. The associated project repository is available at: https://github.com/Shanks205/Indian-stock-return-analyzer
+
+## Funding Statement
+
+This research received no external funding.
+
+## Conflict of Interest and Personal Holding Disclosure
+
+The authors declare no external conflict of interest. One author has held shares of Fiem Industries for more than six months. This personal holding is disclosed for transparency. The paper does not provide investment advice, financial advice, or buy/sell recommendations for Fiem Industries or any other company discussed in the study.
+
+## Data Availability Statement
+
+The research framework, company notes, dashboards, and supporting code are available in the project GitHub repository. The company-level financial data are based on publicly available company filings, investor presentations, exchange disclosures, and public market sources.
+
+## Acknowledgments
+
+The authors thank open-source financial data providers and public company disclosures that made this research possible.
 
 ## AI Disclosure Statement
 
@@ -19,13 +48,13 @@ The authors used AI tools to assist with drafting, structuring, documentation, w
 
 ## 1. Introduction
 
-Equity research is often introduced through stock returns, price charts, basic valuation multiples, or simple screening filters. These tools are useful, but they are not sufficient to understand intrinsic value. A low price-to-earnings ratio does not automatically indicate undervaluation, and a strong recent quarter does not automatically represent sustainable earnings power. Valuation requires a structured link between the business model, financial statements, industry context, risk, cash flow generation, and the cost of capital.
+Equity research is often introduced through stock returns, price charts, valuation multiples, and simple screening filters. These tools are useful, but they are not sufficient to understand intrinsic value. A low price-to-earnings ratio does not automatically indicate undervaluation, and a strong recent quarter does not automatically represent sustainable earnings power. Valuation requires a structured link between business model, financial statements, industry context, risk, cash flow generation, and cost of capital.
 
-This paper develops and applies a public-source fundamental valuation framework for Indian listed companies. The framework is designed for early-career analysts, finance students, and independent researchers who want to move beyond basic stock screening toward a disciplined research workflow. The paper applies the framework to ten Indian listed companies across autos, pharma, metals, refining, agrochemicals, industrial packaging, and capital goods. The selected companies are Hero MotoCorp, Natco Pharma, National Aluminium Company (NALCO), Hindustan Zinc, Chennai Petroleum Corporation (CPCL), Sharda Cropchem, Fiem Industries, Time Technoplast, Force Motors, and Triveni Turbine.
+This paper develops and applies a public-source fundamental valuation framework for Indian listed companies. The framework is designed for early-career analysts, finance students, and independent researchers who want to move beyond basic stock screening toward a disciplined research workflow. The paper applies the framework to ten Indian listed companies across autos, pharma, metals, refining, agrochemicals, industrial packaging, auto components, and capital goods. The selected companies are Hero MotoCorp, Natco Pharma, National Aluminium Company (NALCO), Hindustan Zinc, Chennai Petroleum Corporation (CPCL), Sharda Cropchem, Fiem Industries, Time Technoplast, Force Motors, and Triveni Turbine.
 
-The purpose of the study is not to provide buy, sell, or hold recommendations. Instead, the purpose is methodological. The paper asks how a structured public-source valuation process can improve transparency, assumption discipline, and sector-specific judgement in Indian equity research. The project behind the paper includes company research notes, assumption logs, source logs, peer frameworks, risk matrices, numerical DCF summaries, completion audits, a consolidated valuation dashboard, a 10-company Excel DCF workbook pack, a beta regression pipeline, and a peer-table refresh template.
+The purpose of the study is not to provide buy, sell, or hold recommendations. Instead, the purpose is methodological. The paper asks how a structured public-source valuation process can improve transparency, assumption discipline, and sector-specific judgement in Indian equity research. The project behind the paper includes company research notes, assumptions logs, source logs, peer frameworks, risk matrices, numerical DCF summaries, completion audits, a consolidated valuation dashboard, a ten-company Excel DCF workbook pack, a beta regression pipeline, and a peer-table refresh template.
 
-The paper deliberately uses the classification "Public-Source Complete v1." This means that the research is complete for educational, portfolio, and interview discussion purposes, but it is not presented as fully institutional-grade published research. A fully institutional-grade version would require audited FY26 annual report reconciliation, verified share counts, net debt and cash reconciliation, date-consistent market prices, peer numerical tables, regression beta review, and independent model validation.
+The paper deliberately uses the classification "Public-Source Complete v1." This means that the research is complete for educational, portfolio, and interview-discussion purposes, but it is not presented as fully institutional-grade published research. A fully institutional-grade version would require audited FY26 annual-report reconciliation, verified share counts, net debt and cash reconciliation, date-consistent market prices, peer numerical tables, regression beta review, and independent model validation.
 
 The central argument of this paper is that valuation is not one-size-fits-all. A mature two-wheeler company, a complex generics pharma company, an aluminium producer, a refiner, an agrochemical registration-led business, an auto-component supplier, a polymer packaging company, an auto manufacturer, and a turbine capital-goods company all require different normalization logic. A useful valuation framework must therefore combine common modelling discipline with sector-specific judgement.
 
@@ -39,11 +68,11 @@ The research problem can be stated as follows:
 
 **How can a disciplined public-source valuation framework be designed to evaluate Indian listed companies across sectors while avoiding over-extrapolation of recent earnings, commodity cycles, one-off gains, and sector-specific margin peaks?**
 
-### 2.2 Research Objective
+### 2.2 Main Research Objective
 
 The main objective is to develop and demonstrate a public-source, reproducible equity valuation framework for Indian listed companies using FCFF DCF, WACC construction, peer-comparison design, risk matrices, source logs, and sector-specific normalization.
 
-### 2.3 Specific Objectives
+### 2.3 Specific Research Objectives
 
 1. To build a structured public-source valuation framework for Indian equities.
 2. To apply the framework to ten Indian listed companies across different sectors.
@@ -83,9 +112,9 @@ The paper is grounded in several established areas of finance: fundamental analy
 
 Markowitz's portfolio theory established the importance of risk and return trade-offs in security selection and portfolio construction. Sharpe's capital asset pricing model provided a framework for relating expected return to systematic risk. Later work on multifactor models expanded the understanding of risk drivers. In company valuation practice, DCF analysis remains central because it forces explicit assumptions regarding growth, margin, reinvestment, and risk. However, DCF outputs are highly sensitive to input assumptions, particularly terminal value, WACC, margin, and growth.
 
-Financial statement analysis literature also emphasizes that accounting earnings and cash flows are not identical. Earnings quality, working-capital behaviour, reinvestment requirements, depreciation, capital expenditure, and one-off items must all be understood before drawing conclusions. For example, Piotroski's F-Score highlights the usefulness of combining profitability, leverage, liquidity, and operating efficiency indicators to evaluate financial strength, especially in value contexts.
+Financial statement analysis literature emphasizes that accounting earnings and cash flows are not identical. Earnings quality, working-capital behaviour, reinvestment requirements, depreciation, capital expenditure, and one-off items must all be understood before drawing conclusions. Piotroski's F-Score highlights the usefulness of combining profitability, leverage, liquidity, and operating efficiency indicators to evaluate financial strength, especially in value contexts.
 
-This paper does not seek to replace these frameworks. Instead, it operationalizes them into a public-source workflow for Indian equities. The contribution is practical and methodological: it shows how a research process can combine DCF, WACC, peer comparison, source logs, assumption logs, sector-specific normalization, and Excel/Python automation in a transparent manner.
+This paper does not seek to replace existing valuation theory. Instead, it operationalizes established valuation ideas into a public-source workflow for Indian equities. The contribution is practical and methodological: it shows how a research process can combine DCF, WACC, peer comparison, source logs, assumption logs, sector-specific normalization, and Excel/Python automation in a transparent manner.
 
 ## 4. Data and Sample Selection
 
@@ -106,7 +135,7 @@ The study applies the framework to ten Indian listed companies:
 
 ### 4.2 Sector Coverage
 
-The companies were selected to create diversity across business models rather than to represent a statistically random sample. The sample includes autos, pharma, metals, refining, agrochemicals, industrial packaging, auto components, and capital goods. This design allows the framework to demonstrate how valuation assumptions change across sectors.
+The companies were selected to create diversity across business models rather than to represent a statistically random sample. The sample includes autos, pharmaceuticals, metals, refining, agrochemicals, industrial packaging, auto components, and capital goods. This design allows the framework to demonstrate how valuation assumptions change across sectors.
 
 ### 4.3 Data Sources
 
@@ -168,7 +197,7 @@ Peer comparison is used as a valuation sanity check rather than a substitute for
 
 ### 5.8 Python and Excel Implementation
 
-The project includes Python scripts and Excel workbooks. The automation layer includes a consolidated valuation dashboard, a 10-company DCF workbook pack, a beta regression pipeline, and a peer-table refresh template. This improves reproducibility and allows future refreshes to be performed systematically.
+The project includes Python scripts and Excel workbooks. The automation layer includes a consolidated valuation dashboard, a ten-company DCF workbook pack, a beta regression pipeline, and a peer-table refresh template. This improves reproducibility and allows future refreshes to be performed systematically.
 
 ## 6. Company-Level Application
 
