@@ -8,6 +8,18 @@ This repository started as a beginner-friendly Indian stock return analyzer and 
 
 ---
 
+## SSRN Working Paper
+
+This repository supports our SSRN working paper:
+
+**From Screening to Intrinsic Value: A Public-Source DCF Valuation Framework for Indian Equities**
+
+The paper develops a reproducible public-source valuation framework for Indian listed equities using stock screening, Piotroski-style quality checks, FCFF DCF, WACC construction, peer comparison, sector-specific normalization, and Python/Excel automation.
+
+**SSRN:** https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6681723
+
+---
+
 ## Final project status
 
 ```text
